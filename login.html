@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap / Üye Ol</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<header>
+    <!-- Logo Bölümü -->
+    <div class="logo">
+        <a href="index.html"> <img src="img/header/logo.png" alt="Edurese Logo"> </a>
+    </div>
+
+    <!-- Eğitim Türleri -->
+    <div class="edu-types">
+        <a href="courses.html">Arapça İslami İlimler</a>
+        <a href="courses.html">YDS-YÖKDİL Arapça Kampı</a>
+        <a href="courses.html">2024 Bahar Dönemi Eğitimleri</a>
+    </div>
+
+    <!-- Telefon Numarası -->
+    <div class="contact">
+        <img src="img/header/call.png" alt="Telefon">
+        <span>0542 106 53 06</span>
+    </div>
+
+    <!-- Sosyal Medya İkonları -->
+    <div class="social-media">
+        <a href="https://www.instagram.com/eduresecom/"><img src="img/header/instagram.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com/c/EDURESEcom"><img src="img/header/youtube.png" alt="YouTube"></a>
+        <a href="https://x.com/eduresecom"><img src="img/footer/x.png" alt="x"></a>
+        <a href="mailto:bilgi@edurese.com"><img src="img/footer/maili.png" alt="email"></a>
+        <a href="https://www.facebook.com/eduresecom/"><img src="img/header/facebook.png" alt="facebook"></a>
+    </div>
+
+    <!-- Dil Bayrakları -->
+    <div class="flags">
+        <a href="#" id="translateButtonar" ><img src="img/header/flag1.png" alt="Arapça"></a>
+        <a href="#" id="translateButtonen"><img src="img/header/flag2.png" alt="İngilizce"></a>
+        <a href="#" id="translateButtontr" ><img src="img/header/türkiye.png" alt="Türkçe"></a>
+    </div>
+</header>
+
+<!-- Navbar -->
+<div class="navbar">
+<div class="navbar-wrapper1">
+    <img class="navbar-logo" src="img/navbar/logo.png" alt="Logo">
+    <div class="dropdown">
+        <a href="#">Kurumsal <img class="img-forward" src="img/navbar/Resim1.png" alt=""></a>
+        <div class="dropdown-content">
+            <a href="#">Ne İçin Edurese</a>
+            <a href="#">Yolculuğumuz Nasıl Başladı</a>
+            <a href="#">Misyon Ve Vizyon</a>
+            <a href="#">Yönetim</a>
+        </div>
+    </div>
+    <a href="courses.html">Eğitimler <img class="img-forward" src="img/navbar/Resim1.png" alt=""></a>
+    <a href="courses.html">Eğitmenler <img class="img-forward" src="img/navbar/Resim1.png" alt=""></a>
+    <div class="dropdown">
+        <a href="#">Faaliyetler <img class="img-forward" src="img/navbar/Resim1.png" alt=""></a>
+        <div class="dropdown-content">
+            <a href="#">Arapça Çeviri Seminerleri</a>
+            <a href="#">Arapçaya Adanmış Ömürler</a>
+            <a href="#">Öğrenci Panelleri</a>
+            <a href="#">Kültür - Sanat Panelleri</a>
+        </div>
+    </div>
+    <a href="#">Haberler</a>
+    <a href="contact.html">İletişim</a>
+</div>
+<div class="navbar-wrapper2">
+    <a href="login.html">Login / Register</a>
+    <a href="#"><img class="img-search" src="img/navbar/search.png" alt=""></a>
+    <a href="#"><img class="img-shopcard" src="img/navbar/shop cart.svg" alt=""></a>
+</div>
+</div>
+<body>
+   
+    <!-- Ana Konteyner -->
+    <div class="container">
+        <!-- Sekme Menü -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'login')">Giriş Yap</button>
+            <button class="tab-button" onclick="openTab(event, 'register')">Üye Ol</button>
+        </div>
+
+        <!-- Giriş Yap Formu -->
+        <div id="login" class="form-container active">
+            <h3>Giriş Yap</h3>
+            <form>
+                <div class="input-container">
+                    <label for="email-login">E-Posta</label>
+                    <input type="email" id="email-login" placeholder="E-Posta" required>
+                </div>
+                <div class="input-container">
+                    <label for="password-login">Şifre</label>
+                    <input type="password" id="password-login" placeholder="Şifre" required>
+                </div>
+                <a href="#">Şifremi Unuttum</a>
+                <button type="submit">GİRİŞ YAP</button>
+                <div class="social-login">
+                    <button class="facebook">
+                        <img class="social-login-icon" src="img/loginregister/facebook.png" alt="">
+                        <span class="social-login-text">Facebook</span>
+                    </button>
+                    <button class="google">
+                        <img class="social-login-icon" src="img/loginregister/google.png" alt="">
+                        <span class="social-login-text">Google</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Üye Ol Formu -->
+        <div id="register" class="form-container">
+            <h3>Üye Ol</h3>
+            <form>
+                <div class="input-container">
+                    <label for="email-register">E-Posta</label>
+                    <input type="email" id="email-register" placeholder="E-Posta" required>
+                </div>
+                <div class="input-container">
+                    <label for="password-register">Şifre</label>
+                    <input type="password" id="password-register" placeholder="Şifre" required>
+                </div>
+                <p>Şifreniz <b>en az 10 karakter</b> olmalı. <b>1 büyük harf</b>, <b>1 küçük harf</b> ve <b>rakam</b> içermelidir.</p>
+
+                <!-- Cinsiyet Seçimi -->
+                <div class="gender-buttons">
+                    <button type="button" id="female-btn" onclick="selectGender('female')">Kadın</button>
+                    <button type="button" id="male-btn" onclick="selectGender('male')">Erkek</button>
+                </div>
+
+                <!-- Onay Kutuları -->
+                <div class="checkbox-container">
+                    <label>
+                        <input type="checkbox" required>
+                        Kişisel verilerimin işlenmesine açık rıza veriyorum.
+                    </label><br>
+                    
+                </div>
+
+                <button type="submit">ÜYE OL</button>
+                <div class="social-login">
+                    <button class="facebook">
+                        <img class="social-login-icon" src="img/loginregister/facebook.png" alt="">
+                        <span class="social-login-text">Facebook</span>
+                    </button>
+                    <button class="google">
+                        <img class="social-login-icon" src="img/loginregister/google.png" alt="">
+                        <span class="social-login-text">Google</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            const forms = document.querySelectorAll('.form-container');
+            const buttons = document.querySelectorAll('.tab-button');
+
+            forms.forEach(form => form.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        function selectGender(gender) {
+            const femaleBtn = document.getElementById('female-btn');
+            const maleBtn = document.getElementById('male-btn');
+
+            if (gender === 'female') {
+                femaleBtn.classList.add('active');
+                maleBtn.classList.remove('active');
+            } else {
+                maleBtn.classList.add('active');
+                femaleBtn.classList.remove('active');
+            }
+        }
+    </script>
+    <script src="login.js"></script>
+    <!-- Google Translate Script -->
+
+<div id="google_translate_element"></div>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+
+    function googleTranslateElementInit() {
+
+        new google.translate.TranslateElement({
+
+            pageLanguage: 'tr',
+
+            autoDisplay: false
+
+        }, 'google_translate_element');
+
+    }
+
+</script>
+</body>
+</html>

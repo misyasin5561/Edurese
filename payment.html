@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Listesi</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="topbar-container">
+            <div class="logo">
+                <a href="index.html"> <img src="img/header/logo.png" alt="Edurese Logo"> </a>
+            </div>
+            <div class="ssl-secure">
+                <img src="img/header/secured.png" alt="SSL Secure">
+                <p>SSL secured | GÜVENLİ ÖDEME</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+       
+        <h2 class="payment-method">Ödeme Yöntemleri</h2>
+        <!-- Sekme Sistemi -->
+        <div class="tabs">
+            <div class="tab active" data-tab="card">Kredi Kartı/Banka Kartı</div>
+            <div class="tab" data-tab="eft">Havale/EFT</div>
+        </div>
+    
+        <!-- Kart Sekmesi İçeriği -->
+        <div class="tab-content active" id="card">
+            <div class="card-container" id="cardContainer">
+                <div class="card-front">
+                    <div class="chip"></div>
+                    <div class="card-number" id="cardNumber">•••• •••• •••• ••••</div>
+                    <div class="card-name" id="cardName">ADINIZ SOYADINIZ</div>
+                    <div class="card-expiry" id="cardExpiry">MM/YY</div>
+                </div>
+                <div class="card-back">
+                    <div class="black-bar"></div>
+                    <div class="cvv-box" id="cardCvv">
+
+                        <div class="cvv-text" id="noCvv">123</div>
+
+                    </div>
+                   
+
+                    
+                </div>
+            </div>
+    
+            <div class="form">
+                <input type="text" id="inputCardNumber" placeholder="Kart Numarası" maxlength="19">
+                <input type="text" id="inputCardName" placeholder="Ad Soyad">
+                <div class="row">
+                    <select id="inputMonth">
+                        <option value="AA">Ay</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <select id="inputYear">
+                        <option value="YY">Yıl</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                        <option>32</option>
+                        <option>33</option>
+                    </select>
+                </div>
+                <input type="text" id="inputCvv" placeholder="CVV" maxlength="3">
+                <button type="button">Ödemeyi Tamamla</button>
+            </div>
+        </div>
+    
+        <!-- Havale/EFT Sekmesi İçeriği -->
+        <div class="tab-content" id="eft">
+            <p>Havale/EFT seçeneği ile ödeme yapmak için aşağıdaki bilgileri kullanabilirsiniz:</p>
+            <ul>
+                <li>Banka Adı: Örnek Banka</li>
+                <li>IBAN: TR00 0000 0000 0000 0000 00</li>
+                <li>Alıcı: Örnek Şirket</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="product-container">
+        <h2>Satın Alınacak Ürünler</h2>
+        <div class="product-list">
+            
+        </div>
+        <div class="total">
+            <h3>Toplam</h3>
+            <p><strong>₺2.455,00</strong></p>
+        </div>
+    </div>
+    <script src="payment.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klasik Edebi Metinler Dersi</title>
+  <link rel="stylesheet" href="coursedetail.css">
+</head>
+<body>
+  <div id="cartMenu" class="cart-menu">
+    <div class="cart-header">
+        <h2>Sepet</h2>
+        <button onclick="closeCart()">X</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+        <p>TOPLAM: <span id="cartTotal">0.00 TL</span></p>
+        <a href="payment.html"> <button class="checkout-button">Ödeme Yap</button> </a>
+      </div>
+</div>
+   <!-- Sepet İkonu -->
+<div id="cart-icon" class="cart-icon" onclick="openCart()">
+<span id="cart-count"></span>
+<img src="img/navbar/shop cart.svg" alt="Sepet İkonu">
+</div>
+<header>
+  <!-- Logo Bölümü -->
+  <div class="logo">
+    <a href="index.html"> <img src="img/header/logo.png" alt="Edurese Logo"> </a>
+  </div>
+
+  <!-- Eğitim Türleri -->
+  <div class="edu-types">
+    <a href="courses.html">Arapça İslami İlimler</a>
+    <a href="courses.html">YDS-YÖKDİL Arapça Kampı</a>
+    <a href="courses.html">2024 Bahar Dönemi Eğitimleri</a>
+  </div>
+
+  <!-- Telefon Numarası -->
+  <div class="contact">
+      <img src="img/header/call.png" alt="Telefon">
+      <span>0542 106 53 06</span>
+  </div>
+
+  <!-- Sosyal Medya İkonları -->
+  <div class="social-media">
+      <a href="#"><img src="img/header/youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="img/header/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="img/header/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="img/header/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="img/header/email.png" alt="Email"></a>
+  </div>
+
+  <!-- Dil Bayrakları -->
+  <div class="flags">
+    <a href="#" id="translateButtonar" ><img src="img/header/flag1.png" alt="Arapça"></a>
+    <a href="#" id="translateButtonen"><img src="img/header/flag2.png" alt="İngilizce"></a>
+    <a href="#" id="translateButtontr" ><img src="img/header/türkiye.png" alt="Türkçe"></a>
+</div>
+</header>
+
+  <!-- Navbar -->
+<div class="navbar">
+  <div class="navbar-wrapper1">
+      <img class="navbar-logo" src="img/navbar/logo.png" alt="Logo">
+      <div class="dropdown">
+          <a href="#">Kurumsal <img class="img-forward" src="img/navbar/Resim1.png" alt=""></a>
+          <div class="dropdown-content">
+              <a href="#">Ne İçin Edurese</a>
+              <a href="#">Yolculuğumuz Nasıl Başladı</a>
+              <a href="#">Misyon Ve Vizyon</a>
+              <a href="#">Yönetim</a>
+          </div>
+      </div>
+      <a href="courses.html">Eğitimler <img class="img-forward" src="img/navbar/Resim1.png" alt=""></a>
+      <a href="courses.html">Eğitmenler <img class="img-forward" src="img/navbar/Resim1.png" alt=""></a>
+      <div class="dropdown">
+          <a href="#">Faaliyetler <img class="img-forward" src="img/navbar/Resim1.png" alt=""></a>
+          <div class="dropdown-content">
+              <a href="#">Arapça Çeviri Seminerleri</a>
+              <a href="#">Arapçaya Adanmış Ömürler</a>
+              <a href="#">Öğrenci Panelleri</a>
+              <a href="#">Kültür - Sanat Panelleri</a>
+          </div>
+      </div>
+      <a href="#">Haberler</a>
+      <a href="contact.html">İletişim</a>
+  </div>
+  <div class="navbar-wrapper2">
+      <a href="login.html">Kayıt ol/ Giriş yap</a>
+      <a href="#"><img class="img-search" src="img/navbar/search.png" alt=""></a>
+      <a href="#"><img class="img-shopcard" src="img/navbar/shop cart.svg" alt=""></a>
+  </div>
+  </div>
+  
+  <section class="video-section">
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vpq0ecif7Qo?si=t7yOU06P9e660DdV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+    <div class="course-info">
+      <h1>Klasik Edebi Metinler</h3>
+      <p>
+        Bu ders, Câhiliye döneminden Osmanlı’ya kadar klasik edebiyatın önemli metinlerini ele alır. 
+        Eğitim boyunca nesir ve şiir örnekleri incelenir ve tarihi bağlamlarıyla analiz edilir.
+      </p>
+      <h3>Oluşturan: Dr. Öğr. Üyesi Serkan Ünal</h3>
+      <p>Toplam süre: <strong>12 hafta</strong></p>
+    </div>
+  </section>
+
+  <main class="content">
+    <section class="course-content">
+      <h3>Ders İçeriği (12 Hafta)</h3>
+      <div class="weeks">
+        <div class="week-card">
+          <h4>1. Hafta: Câhiliye Dönemi</h4>
+          <p>Kuss b. Sâʻide’nin Konuşması</p>
+        </div>
+        <div class="week-card">
+          <h4>2. Hafta: İslâm Dönemi</h4>
+          <p>Hz. Peygamber’in Vedâ Hutbesi</p>
+        </div>
+        <div class="week-card">
+          <h4>3. Hafta: İslâm Dönemi</h4>
+          <p>Hz. Ebû Bekir’in Hutbesi, Hz. Ömer’in Vasiyeti</p>
+        </div>
+        <div class="week-card">
+          <h4>4. Hafta: Emevî Dönemi</h4>
+          <p>Abdulhamîd b. Yahyâ’nın Mektubu</p>
+        </div>
+        <div class="week-card">
+          <h4>5. Hafta: Abbâsî Dönemi</h4>
+          <p>Câhız’ın Kitâbu’l-Hayevân’dan “İnsan’ın Küçük Âlem Olarak İsimlendirilmesi”</p>
+        </div>
+        <div class="week-card">
+          <h4>6. Hafta: Abbâsî Dönemi</h4>
+          <p>el-Makâmâtu’l-Harîriyye’den el-Makâmetu’s-Sanʻâniyye</p>
+        </div>
+        <div class="week-card">
+          <h4>7. Hafta: Câhiliye Dönemi</h4>
+          <p>İmru’u’l-Kays’ın Muʻallakası</p>
+        </div>
+        <div class="week-card">
+          <h4>8. Hafta: İslâm Dönemi</h4>
+          <p>Hassân b. Sâbit’in Hz. Peygamber’e mersiyesi (Bi Taybete rasmun li’r-Rasûli ve maʻhedu)</p>
+        </div>
+        <div class="week-card">
+          <h4>9. Hafta: Emevî Dönemi</h4>
+          <p>Cerîr Şiiri (Ekılli’l-Levme)</p>
+        </div>
+        <div class="week-card">
+          <h4>10. Hafta: Abbâsî Dönemi</h4>
+          <p>Mütenebbî (ʻAlâ kadri ehli’l-ʻazmi te’ti’l-ʻazâ’imu)</p>
+        </div>
+        <div class="week-card">
+          <h4>11. Hafta: Endülüs Edebiyatı</h4>
+          <p>Ebu’l-Bekâ er-Rundî (Risâu’l-Endelüs)</p>
+        </div>
+        <div class="week-card">
+          <h4>12. Hafta: Osmanlı Dönemi</h4>
+          <p>Abdullâh eş-Şubrâvî (Ve Hakkıke ente’l-munâ ve’t-talebu), Sultan I. Abdulhamîd (el-Kasîdetu’l-Hucriyye)</p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="register-panel" data-name="Klasik Edebi Metinler" data-price="500" data-img="https://img.youtube.com/vi/vpq0ecif7Qo/maxresdefault.jpg" >
+        <h3>Kayıt ve Fiyat Bilgisi</h3>
+        <p><strong>Ücret:</strong> 500 TL</p>
+        <p><strong>Kayıt Tarihi:</strong> 01.01.2025</p>
+        <p><strong>Eğitim Başlangıcı:</strong> 10.01.2025</p>
+        <button class="register-btn" onclick="addToCart(this)">Kayıt Ol</button>
+      </div>
+      <div class="instructor-section">
+        <div class="instructor-photo">
+          <img src="img/hocalar/serkanünal.png" alt="Dr. Serkan Ünal" />
+        </div>
+        <div class="instructor-info">
+          <h3>Eğitmen Hakkında</h3>
+          <p>
+            1980 Erzincan doğumlu ve burada ilim tahsilini tamamladı. Mısır’da el-Ezher Üniversitesi’nde Hadis eğitimi aldı. 2008’de Mısır Radyo Televizyonu’nda çalıştı, ardından Türkiye’ye dönerek Sahn-ı Semân İslami İlimler Merkezi’nde dersler verdi. 2017’de Fatih Sultan Mehmet Vakıf Üniversitesi’nde yüksek lisans ve doktora tamamladı. 2016’dan beri aynı üniversitede öğretim görevlisi olarak İslami İlimler Fakültesi’nde çalışmalarını sürdürmektedir.
+          </p>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <div class="footer-container">
+        <!-- Sol Kısım: Logo -->
+        <div class="footer-logo">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 290" style="enable-background:new 0 0 500 290;" xml:space="preserve" class=" bdt-svg" width="500" height="290">
+                <style type="text/css">
+                    .st0{fill:#FFFFFF;}
+                </style>
+                <g>
+                    <path class="st0" d="M492.7,103.9c0,0-140.8-56.2-242.7,24.2c0,0,119.5-42.5,250,4.6L492.7,103.9z"></path>
+                    <path class="st0" d="M482.3,87.4L464,54.7c-140.8-27.1-210.8,65.3-210.8,65.3C370.7,43.5,482.3,87.4,482.3,87.4"></path>
+                    <path class="st0" d="M447.1,42.9l-24.5-27.8c-136.8,0-169.3,97.2-169.3,97.2C309.8,26.9,447.1,42.9,447.1,42.9"></path>
+                    <path class="st0" d="M7.3,103.9L0,132.7c130.5-47,250-4.6,250-4.6C148.2,47.7,7.3,103.9,7.3,103.9"></path>
+                    <path class="st0" d="M246.8,119.9c0,0-69.9-92.4-210.8-65.3L17.7,87.4C17.7,87.4,129.3,43.5,246.8,119.9"></path>
+                    <path class="st0" d="M246.8,112.3c0,0-32.5-97.2-169.3-97.2L52.9,42.9C52.9,42.9,190.2,26.9,246.8,112.3"></path>
+                    <path class="st0" d="M250,51.2c-10.8,0-19.3,4.5-23.6,10.8l8.6,8.4c2.4-4.1,8-7.2,15-7.2s12.6,3.1,15,7.2l8.6-8.4
+                        C269.3,55.8,260.8,51.2,250,51.2"></path>
+                    <path class="st0" d="M250,0c-26.8,0-45.7,14.5-52.9,32.6l25.1,24.5c5-7.5,15-12.9,27.8-12.9c12.8,0,22.8,5.4,27.8,12.9l25.1-24.5
+                        C295.7,14.5,276.8,0,250,0"></path>
+                    <path class="st0" d="M250,66.7c-6,0-10.7,2.8-12.3,6.4l4.3,4.2H258l4.3-4.2C260.7,69.5,256,66.7,250,66.7"></path>
+                    <g>
+                        <path class="st0" d="M48.2,163.5H22v14.2h24.7v18.7H22v14.6h26.2v18.7H0v-84.7h48.2V163.5z"></path>
+                        <path class="st0" d="M64.1,144.8h32.6c5.8,0,11.2,1.2,16.2,3.5c5.1,2.3,9.5,5.4,13.3,9.3c3.8,3.9,6.8,8.4,8.9,13.5
+                            c2.2,5.1,3.3,10.5,3.3,16.1c0,5.5-1.1,10.9-3.2,16c-2.1,5.1-5.1,9.6-8.9,13.5c-3.8,3.9-8.2,7-13.3,9.3c-5.1,2.3-10.5,3.5-16.3,3.5
+                            H64L64.1,144.8L64.1,144.8z M86.1,210.9h5.1c3.8,0,7.2-0.6,10.2-1.8c3-1.2,5.5-2.8,7.6-4.9c2.1-2.1,3.6-4.6,4.7-7.5
+                            c1.1-2.9,1.6-6,1.6-9.5c0-3.4-0.6-6.5-1.7-9.4c-1.1-2.9-2.7-5.4-4.8-7.5c-2.1-2.1-4.6-3.7-7.6-4.9c-3-1.2-6.4-1.8-10.1-1.8h-5.1
+                            L86.1,210.9L86.1,210.9z"></path>
+                        <path class="st0" d="M174.4,144.8v46.1c0,2.5,0.1,5,0.3,7.6c0.2,2.6,0.7,4.9,1.7,7c0.9,2.1,2.4,3.8,4.4,5.1c2,1.3,4.9,2,8.5,2
+                            c3.7,0,6.5-0.7,8.5-2c2-1.3,3.5-3,4.4-5.1c1-2.1,1.6-4.4,1.7-7c0.2-2.6,0.3-5.1,0.3-7.6v-46.1h21.9v49.1c0,13.2-3,22.8-9.1,28.9
+                            c-6,6.1-15.3,9.1-27.8,9.1c-12.5,0-21.8-3-27.9-9.1c-6.1-6.1-9.1-15.7-9.1-28.9v-49.1H174.4z"></path>
+                    </g>
+                    <g>
+                        <path class="st0" d="M305.9,229.6h-27.4l-21-32.6v32.6h-22v-84.7h34.3c4.7,0,8.8,0.7,12.4,2.1c3.5,1.4,6.4,3.3,8.7,5.7
+                            c2.3,2.4,4,5.2,5.2,8.3s1.7,6.5,1.7,10.1c0,6.4-1.6,11.7-4.7,15.7c-3.1,4-7.7,6.7-13.8,8.1L305.9,229.6z M257.5,182.7h4.2
+                            c4.3,0,7.7-0.9,10-2.7c2.3-1.8,3.5-4.4,3.5-7.8c0-3.4-1.2-6-3.5-7.8c-2.3-1.8-5.7-2.7-10-2.7h-4.2V182.7z"></path>
+                        <path class="st0" d="M363.3,163.5h-26.2v14.2h24.7v18.7h-24.7v14.6h26.2v18.7h-48.2v-84.7h48.2V163.5z"></path>
+                        <path class="st0" d="M425.7,166.5c-2.4-1.9-4.8-3.4-7.2-4.3c-2.4-0.9-4.7-1.4-7-1.4c-2.9,0-5.2,0.7-7,2c-1.8,1.4-2.7,3.1-2.7,5.3
+                            c0,1.5,0.5,2.7,1.4,3.7c0.9,1,2.1,1.8,3.5,2.5c1.5,0.7,3.1,1.3,4.9,1.9c1.8,0.5,3.6,1.1,5.5,1.7c7.2,2.4,12.5,5.6,15.8,9.6
+                            c3.3,4,5,9.2,5,15.7c0,4.3-0.7,8.3-2.2,11.8c-1.5,3.5-3.6,6.5-6.4,9.1c-2.8,2.5-6.3,4.5-10.3,5.8c-4.1,1.4-8.7,2.1-13.9,2.1
+                            c-10.7,0-20.6-3.2-29.8-9.6l9.4-17.8c3.3,2.9,6.6,5.1,9.8,6.5c3.2,1.4,6.4,2.1,9.6,2.1c3.6,0,6.3-0.8,8-2.5
+                            c1.8-1.6,2.6-3.5,2.6-5.6c0-1.3-0.2-2.4-0.7-3.3s-1.2-1.8-2.2-2.6c-1-0.8-2.4-1.5-4.1-2.2c-1.7-0.7-3.7-1.4-6.1-2.2
+                            c-2.9-0.9-5.6-1.9-8.4-3c-2.7-1.1-5.2-2.5-7.3-4.3c-2.1-1.8-3.9-4.1-5.2-6.8c-1.3-2.7-2-6.2-2-10.4c0-4.2,0.7-8,2.1-11.4
+                            c1.4-3.4,3.3-6.3,5.8-8.8c2.5-2.4,5.6-4.3,9.2-5.7c3.6-1.4,7.7-2,12.2-2c4.2,0,8.6,0.6,13.1,1.7c4.6,1.2,9,2.9,13.2,5.1
+                            L425.7,166.5z"></path>
+                        <path class="st0" d="M500,163.5h-26.2v14.2h24.7v18.7h-24.7v14.6H500v18.7h-48.2v-84.7H500V163.5z"></path>
+                    </g>
+                    <g>
+                        <path class="st0" d="M146.3,283.7h-14.6l-2.3,6.3h-10.9l14.9-36.1h11.1l14.9,36.1h-10.9L146.3,283.7z M143.6,276.6l-4.6-12
+                            l-4.6,12H143.6z"></path>
+                        <path class="st0" d="M174.2,268.8l12.4-14.9h12.6L183.6,271l17,19h-13.2l-13.3-15.7V290H164v-36.1h10.2L174.2,268.8L174.2,268.8z"></path>
+                        <path class="st0" d="M229.1,283.7h-14.6l-2.3,6.3h-10.9l14.9-36.1h11.1l14.9,36.1h-10.9L229.1,283.7z M226.4,276.6l-4.6-12
+                            l-4.6,12H226.4z"></path>
+                        <path class="st0" d="M246.8,253.9h15.1c2.7,0,5.2,0.5,7.5,1.5c2.3,1,4.4,2.3,6.1,4c1.8,1.6,3.1,3.6,4.1,5.7c1,2.2,1.5,4.5,1.5,6.9
+                            c0,2.4-0.5,4.6-1.5,6.8c-1,2.2-2.4,4.1-4.1,5.8c-1.8,1.7-3.8,3-6.1,4c-2.3,1-4.9,1.5-7.6,1.5h-15.1L246.8,253.9L246.8,253.9z
+                             M257,282.1h2.3c1.8,0,3.3-0.3,4.7-0.8c1.4-0.5,2.6-1.2,3.5-2.1c0.9-0.9,1.7-2,2.2-3.2c0.5-1.2,0.8-2.6,0.8-4c0-1.4-0.3-2.8-0.8-4
+                            c-0.5-1.2-1.3-2.3-2.2-3.2c-1-0.9-2.1-1.6-3.5-2.1c-1.4-0.5-2.9-0.8-4.7-0.8H257L257,282.1L257,282.1z"></path>
+                        <path class="st0" d="M309.9,261.9h-12.1v6h11.4v7.9h-11.4v6.2h12.1v7.9h-22.3v-36.1h22.3V261.9z"></path>
+                        <path class="st0" d="M315.5,290l6.7-36.1h10.1l7.9,19.2l7.8-19.2H358l6.7,36.1h-10.1l-3.4-20.8l-9.3,20.8h-4.1l-8.8-20.8
+                            l-3.4,20.8L315.5,290L315.5,290z"></path>
+                        <path class="st0" d="M370.9,246c0-0.7,0.1-1.3,0.4-1.9c0.3-0.6,0.6-1.1,1.1-1.6c0.5-0.4,1-0.8,1.7-1c0.6-0.3,1.3-0.4,2.1-0.4
+                            c0.7,0,1.4,0.1,2.1,0.4c0.6,0.3,1.2,0.6,1.7,1c0.5,0.4,0.9,1,1.1,1.6c0.3,0.6,0.4,1.2,0.4,1.9c0,0.7-0.1,1.3-0.4,1.9
+                            c-0.3,0.6-0.7,1.1-1.1,1.5s-1,0.8-1.7,1c-0.6,0.3-1.3,0.4-2.1,0.4s-1.4-0.1-2.1-0.4c-0.6-0.3-1.2-0.6-1.7-1
+                            c-0.5-0.4-0.8-0.9-1.1-1.5C371,247.3,370.9,246.7,370.9,246z M381.2,253.9V290h-10.2v-36.1H381.2z"></path>
+                    </g>
+                </g>
+                </svg>
+            </div>
+
+        <!-- Orta Kısım: İrtibat ve Linkler -->
+        <div class="footer-sections">
+            <!-- İrtibat Bilgileri -->
+            <div class="footer-section">
+                <h3>İrtibat</h3>
+                <div class="contacts">
+                <div class="contact1">
+                <img src="img/footer/call.png" alt="">
+                <p> Telefon: <br> 0542 106 53 06</p>
+            </div>
+            <div class="contact1">
+                <img src="img/footer/email.jpg" alt="">
+                <p> E-Posta: <br> <a href="mailto:bilgi@edurese.com">bilgi@edurese.com</a></p>
+            </div>
+            <div class="contact1">
+                <img src="img/footer/location.png" alt="">
+                <p> Adres:<br> Şenyuva Mahallesi Seyhan Caddesi Büyük Ankara Camii Külliyesi 11-C/17 Keçiören/ANKARA</p>
+            </div>
+            </div>
+        </div>
+            <!-- Linkler -->
+            <div class="footer-section">
+            
+                <h3>Linkler</h3>
+                <ul>
+                    <li><a href="#">Niçin Edurese?</a></li>
+                    <li><a href="#">Nasıl Başladık</a></li>
+                    <li><a href="#">Misyon ve Vizyon</a></li>
+                    <li><a href="#">Yönetim</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+
+            <!-- Dersler ve Kurslar -->
+            <div class="footer-section">
+                <h3>Dersler ve Kurslar</h3>
+                <ul>
+                    <li><a href="#">Yabancı Dil</a></li>
+                    <li><a href="#">Genel Arapça</a></li>
+                    <li><a href="#">YDS - YÖK Dil</a></li>
+                    <li><a href="#">Kur'an-ı Kerim</a></li>
+                    <li><a href="#">Tefsir</a></li>
+                </ul>
+            </div>
+
+            <!-- Haberler -->
+            <div class="footer-section">
+                <h3>Haberler</h3>
+                <p><strong>Kasım 8, 2024 <br>
+                </strong><p id="k">Dersler’in Youtube <br>Uzantıları</p> </p>
+                <p><strong>Kasım 7, 2024 <br></strong> <p id="k">EDURESE Akademi 12. <br> Eğitim Dönemi Başvuru</p> </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Alt Bilgi -->
+    <div class="footer-bottom">
+        
+        <p id="bottom-items">© 2022 Edurese Akademi</p>
+        <div id="bottom-items" class="social-icons">
+            <a href="#"><img src="img/header/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="img/header/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="img/footer/x.png" alt="x"></a>
+            <a href="#"><img src="img/footer/maili.png" alt="email"></a>
+            <a href="#"><img src="img/header/facebook.png" alt="facebook"></a>
+        </div>
+    </div>
+</footer>
+<script src="coursedetail.js"></script>
+<!-- Google Translate Script -->
+
+<div id="google_translate_element"></div>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript">
+
+    function googleTranslateElementInit() {
+
+        new google.translate.TranslateElement({
+
+            pageLanguage: 'tr',
+
+            autoDisplay: false
+
+        }, 'google_translate_element');
+
+    }
+
+</script>
+
+</body>
+
+</html>  

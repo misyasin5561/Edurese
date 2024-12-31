@@ -1,0 +1,718 @@
+  /* Genel Ayarlar */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  height: 80px;
+  background-color:#d8dbe474;
+}
+
+
+
+/* Logo */
+.logo img {
+  width: 120px;
+  height: auto;
+  margin-left: 100px;
+}
+
+/* Sosyal Medya İkonları */
+.social-media a {
+  margin: 0 5px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Telefon Numarası */
+.contact img {
+  margin-right: 8px;
+  width: 25px;
+  height: 25px;
+}
+
+/* E-Posta Adresi */
+.email img {
+  margin-right: 8px;
+  width: 25px;
+  height: 25px;
+}
+
+/* Bayraklar */
+.flags a {
+  margin-left: 5px;
+}
+
+.flags img {
+  width: 30px;
+  object-fit: cover;
+}
+
+.edu-types{
+  font-size: 28px;
+  text-decoration: none;
+  color: black;
+  
+
+}
+.edu-types a {
+  color: black;
+  text-decoration: none;
+margin-left: 40px; 
+ font-size: 15px;
+  
+ 
+}
+
+
+
+/* Part 1 End */
+
+
+/* Part 2 Navbar Start*/
+
+        /* Navbar styles */
+        .navbar {
+            height: 92.8px;
+            position: sticky;
+            top: 0px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar.hidden {
+            top: 0;
+        }
+        .navbar-wrapper1 {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            margin-left: 65px;
+        }
+
+        .logo {
+            width: 130px;
+            height: 75px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .navbar-wrapper1 a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            
+        }
+
+        .navbar-wrapper1 a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar-wrapper2 {
+            display: flex;
+            align-items: center;
+            margin-right: 39px;
+        }
+
+        .navbar-wrapper2 a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .img-forward{
+            height: 10px;
+            width: 10px;
+            margin-left: 5px;
+        }
+        .img-shopcard{
+           height: 24px; 
+           width: 24px;
+        }
+        .img-search{
+            width: 22px;
+            height: 22px;
+        }
+        /* aşağı kaydırdıgımızda bu navbar-logo ayarlanacak inşallah amin*/
+        .navbar-logo{
+            opacity: 0;
+            width: 100px;
+            height: 69px;
+        }
+
+
+        /*dropdown */
+/* Dropdown Ana Stil */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff; /* Beyaz arkaplan */
+    min-width: 240px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
+    border-radius: 8px; /* Köşeleri yuvarlak yap */
+    z-index: 1000;
+    padding: 10px 0; /* Dropdown içeriği boşluk */
+}
+
+.dropdown-content a {
+    color: #6e6e6e; /* Gri renk */
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-bottom: 1px solid #f1f1f1; /* Alt çizgi */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    white-space: nowrap; /* alt satıra geçmesini engellemek için kullandım ileride silerek problemi çözebilirsin */
+   
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none; /* Son elemanda çizgiyi kaldır */
+}
+
+.dropdown-content a:hover,
+.dropdown-content a.active {
+    color: #ff7f50; /* Turuncu renk */
+    background-color: transparent; /* Arkaplan değişimi yok */
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Dropdown'u hover ile göster */
+}
+
+/* Dropdown Menü Ok İşareti */
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff; /* Beyaz ok */
+}
+
+
+/* dropdown end * /
+
+/* part 2 end */
+
+
+  /* Video ve Eğitim Bilgisi */
+  .video-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-wrapper {
+    flex: 1.5;
+    margin-right: 20px;
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 8px;
+  }
+
+  .course-info {
+    flex: 1;
+  }
+  .course-info h1{
+    margin-bottom: 10px;
+    color: #003366;
+
+  }
+
+  .course-info h3 {
+    margin-bottom: 10px;
+  }
+
+  /* İçerik ve Haftalar */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+
+  /* Ders İçeriği */
+  .course-content {
+    flex: 2; /* %70 yerine %66 daha dengeli genişlik */
+    margin-right: 20px;
+    width: calc(66% - 20px); /* Genişlik + Sidebar genişliği */
+  }
+
+  /* Sidebar */
+  .sidebar {
+    flex: 1; /* %30 genişlik yeterli */
+    width: calc(33% - 20px); /* Genişlik + Course content genişliği */
+  }
+
+  .weeks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .week-card {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .week-card h4 {
+    color: #003366;
+  }
+
+  /* Eğitmen Bilgileri */
+  .instructor-section {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .instructor-photo img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+
+  .instructor-info {
+    padding-left: 20px;
+  }
+
+  /* Kayıt Paneli */
+  .register-panel {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .register-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #EC681B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .register-btn:hover {
+    background-color: #00509e;
+  }
+
+/* sepet */
+
+
+  /* Sepet Menüsü */
+  .cart-menu {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.cart-menu.open {
+    right: 0; /* Menü açılınca sağa gelir */
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Sepet Ürün Listesi */
+.cart-items {
+display: flex;
+flex-direction: column; /* Ürünler dikey hizalanır */
+gap: 10px; /* Ürünler arasına boşluk ekler */
+padding: 10px;
+overflow-y: auto; /* Kaydırma aktif olur */
+max-height: 70vh; /* Uzunluk sınırı */
+align-items: stretch; /* Ürünler tam genişlikte hizalanır */
+}
+
+.cart-item {
+display: flex;
+align-items: center; /* Resim ve içerik ortalanır */
+justify-content: space-between; /* Resim ve içerik ayrılır */
+border: 1px solid #ddd;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+background-color: #fff;
+width: 100%; /* Sepet içindeki eleman tam genişlikte olur */
+box-sizing: border-box; /* Kenar boşluklarını genişlikten çıkarır */
+}
+
+.cart-item img {
+width: 60px;
+height: 60px;
+margin-right: 10px; /* Resim ile içerik arasına boşluk ekler */
+flex-shrink: 0; /* Resmin küçülmesini önler */
+object-fit: cover;
+}
+
+.cart-item div {
+flex: 1; /* İçerik alanı resimden kalan tüm alanı kaplar */
+}
+
+.cart-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f8f8f8;
+    position: sticky;
+    bottom: 0;
+}
+
+
+.checkout-button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.checkout-button a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+/* Sepet İkonu Stili */
+.cart-icon {
+    position: fixed; /* Sağ kenara sabitler */
+    top: 50%; /* Yarı yükseklikte görünür */
+    right: 10px; /* Sayfanın sağından 10px içeri */
+    background-color: #4caf50; /* Arkaplan rengi */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000; /* Diğer elementlerin üstünde görünür */
+}
+
+.cart-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+#cart-count {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+ /* Part 4 Footer start */
+
+/* Footer Genel Stil */
+footer {
+  background-color: #1C1F28;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 30px;
+  height: 180px;
+  
+}
+
+.footer-logo svg {
+  width: 300px;
+}
+
+
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin-top: 30px;
+  
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+ 
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #AEB2C2;
+  text-decoration: none;
+  
+}
+.footer-section ul li  {
+
+  margin: 15px 0;
+  
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin: 15px 0;
+  color: #AEB2C2;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin: 0 10px;
+}
+#k{
+  color: #fff;
+  font-weight: bold;
+
+}
+
+
+.contact1{
+  display: flex;
+  align-items: center;
+}
+
+.contact1 img{
+width: 32px;
+height: 32px;
+}
+
+.contact1 p{
+  margin-left: 20px;
+}
+
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10px;
+}
+
+#bottom-items{
+  padding-top: 30px;
+}
+
+/* öğretici*/
+.button:hover{
+  background-color:#9d650c;
+}
+
+  /*google çeviri api */
+
+#google_translate_element { display: none; } /* Google Translate menüsünü gizle */
+
+@media (max-width: 768px) {
+  header {
+      padding: 10px 15px; /* Header padding değerini küçültüyoruz */
+      height: 60px; /* Header yüksekliğini küçültüyoruz */
+  }
+      
+  /* Logo küçültme */
+  .logo img {
+      width: 80px; /* Logo boyutunu küçültüyoruz */
+      margin-left: 10px; /* Sol margin'i küçültüyoruz */
+  }
+
+  /* Sosyal medya ikonları küçültme */
+  .social-media img {
+      width: 15px; /* İkonları küçültüyoruz */
+      height: 15px;
+  }
+
+  /* Telefon numarası ikonunu küçültme */
+  .contact img {
+      width: 20px; /* İkonları küçültüyoruz */
+      height: 20px;
+  }
+
+  /* E-posta ikonunu küçültme */
+  .email img {
+      width: 20px; /* İkonları küçültüyoruz */
+      height: 20px;
+  }
+
+  /* Bayraklar küçültme */
+  .flags img {
+      width: 15px; /* Bayrakları küçültüyoruz */
+  }
+
+  /* Navbar yazı boyutunu küçültme */
+  .navbar-wrapper1 a {
+      font-size: 12px; /* Navbar yazı font boyutunu küçültüyoruz */
+  }
+
+  .navbar {
+      height: 60px; /* Navbar yüksekliğini küçültüyoruz */
+      padding: 5px 15px; /* Navbar padding değerini küçültüyoruz */
+  }
+  
+  /* Navbar içindeki yazıları daha da küçültüyoruz */
+  .navbar-wrapper1 a {
+      font-size: 10px; /* Navbar yazı font boyutunu daha da küçültüyoruz */
+      margin-left: 0; /* Sol margin'i sıfırlıyoruz */
+  }
+
+  /* Logo boyutunu küçültüyoruz */
+  .logo {
+      width: 100px; /* Logo boyutunu küçültüyoruz */
+      height: 50px; /* Logo yüksekliğini küçültüyoruz */
+      margin-left: 0; /* Logo sol margin'i sıfırlıyoruz */
+  }
+
+  /* Navbar'daki simgeleri küçültüyoruz */
+  .navbar-wrapper2 a {
+      font-size: 10px; /* Navbar'daki simge yazı font boyutunu daha da küçültüyoruz */
+      margin-left: 0; /* Sol margin'i sıfırlıyoruz */
+  }
+
+  .navbar-wrapper2 img {
+      width: 18px; /* İkonları küçültüyoruz */
+      height: 18px;
+  }
+
+  /* Navbar içindeki tüm resimleri gizliyoruz */
+  .navbar img {
+      display: none; /* Resimleri gizliyoruz */
+  }
+  .contact {
+      font-size: 8px;
+  }
+ 
+  .edu-types {
+      display: none;
+  }
+  footer img {
+        
+    height: 80px; /* Yüksekliği orantılı olarak ayarlıyoruz */
+}
+
+footer p {
+    font-size: 8px; /* Footer içindeki paragrafların yazı boyutunu küçültüyoruz */
+}
+
+footer a {
+    font-size: 8px; /* Footer içindeki linklerin yazı boyutunu küçültüyoruz */
+}
+
+footer .social-icons a img {
+    width: 10px; /* Footer sosyal medya ikonlarının boyutunu küçültüyoruz */
+    height: 10px;
+}
+
+}
